@@ -2,91 +2,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philip Pablo</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;800&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Philip</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
 
-    <div class="navbar">
-        <div class="brand">
-            Philip
-        </div>
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="#home">Home</a>
-            </li>
-            <li class="menu-item">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="menu-item">
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="home" id="home">
-        <div class="intro">
-            <div class="details">
-                <h1>Web Developer</h1>
-                <p>Experienced web developer specializing in Web Application and Single Page Application with modern responsive web design.</p>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#">PHILIP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="projects" id="projects">
-        <div class="content">
-            <h1>Projects</h1>
-            <div class="details">
-                <div class="project1">
-                    <span>Blogging Website</span>
+    <main>
+
+        <!-- HOME -->
+        <div id="home">
+            <section class="jumbotron text-center bg-light">
+                <div class="container p-5 mt-5 mb-5">
+                    <h1 class="font-weight-bold">Hi I'm Philip Pablo</h1>
+                    <h2 class="font-weight-light">Web Developer</h2>
+                    <p class="lead text-muted">
+                        Passionate web developer specializing in building Web Application, Single Page Application and Responsive Web Design.
+                    </p>
+                    <p>
+                        <a href="#portfolio" class="btn btn-secondary my-2">My Projects</a>
+                    </p>
                 </div>
-                <div class="project2">
-                    <span>Forum Website</span>
-                </div>
-                <div class="project3">
-                    <span>Web based POS</span>
-                </div>
-                <div class="project4">
-                    <span>Web based Payroll System</span>
+            </section>
+        </div>
+
+        <!-- PORTFOLIO -->
+        <div id="portfolio">
+            <h2 class="text-center font-weight-light">PORTFOLIO</h2>
+            <p class="container text-center lead">
+                List of some projects that I build.
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm">
+                        <img src="./img/Blog.png" class="card-img-top img-fluid" style="height:260px;object-fit:cover;" alt="">
+                        <div class="card-body">
+                            <h5>Blog Website</h5>
+                            <p class="card-text">An interactive blogging website for authors and readers and people who loves to write and express their ideas.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm">
+                        <img src="./img/Forum.png" class="card-img-top img-fluid" style="height:260px;object-fit:cover;" alt="">
+                        <div class="card-body">
+                            <h5>Forum Website</h5>
+                            <p class="card-text">A Forum website for interacting to other people with the topics that they like.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm">
+                        <img src="./img/Payroll.png" class="card-img-top img-fluid" style="height:260px;object-fit:cover;" alt="">
+                        <div class="card-body">
+                            <h5>Payroll System</h5>
+                            <p class="card-text">Enterprise web application for managing multiple companies payroll and employees 201 data.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm">
+                        <img src="./img/POS.png" class="card-img-top img-fluid" style="height:260px;object-fit:cover;" alt="">
+                        <div class="card-body">
+                            <h5>Point of Sale System</h5>
+                            <p class="card-text">A Simple point of sale web application for managing incoming sales and sales data.</p>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="contact" id="contact">
-        <div class="content">
-            <h1>Contact</h1>
-            <div class="details">
-                <div>
-                    <p>
-                        <span class="label"> Phone : </span> 
-                        <span> +639155338260 </span>
-                    </p>
-                    <p>
-                        <span class="label"> E-Mail : </span>
-                        <span> pablophilipandrew@gmail.com </span>
-                    </p>
-                    <p>
-                        <span class="label"> Address : </span>
-                        <span> Makati City, Philippines </span>
-                    </p>
+        <!-- SERVICES -->
+        <div id="services" class="pt-4">
+            <h2 class="text-center font-weight-light">SERVICES</h2>
+            <p class="container text-center lead">
+                Services that I provide.
+            </p>
+          
+            <div class="container">
+                <div class="card-deck mb-3 text-center">
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-normal">Web Application</h5>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">
+                                <img src="./img/laravel.png" class="mr-3 mb-3" width="50" alt="laravel">
+                                <img src="./img/php.png" class="mr-3 mb-3" width="50" alt="php">
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Laravel</li>
+                                <li>PHP</li>
+                                <li>Laravel Passport</li>
+                                <li>Laravel Mix</li>
+                                <li>PHP Unit</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-normal">Single Page Application</h5>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">
+                                <img src="./img/vue.png" class="mr-3 mb-3" width="50" alt="vue">
+                                <img src="./img/nuxt.png" class="mr-3 mb-3" width="50" alt="nuxt">
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Vue.js</li>
+                                <li>Vue Router</li>
+                                <li>Vuex</li>
+                                <li>Nuxt.js</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-normal">Responsive Web Design</h5>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">
+                                <img src="./img/bootstrap.png" class="mr-3 mb-3" width="50" alt="bootstrap">
+                                <img src="./img/bulma.png" class="mr-3 mb-3" width="50" alt="bulma">
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Bootstrap</li>
+                                <li>Bulma</li>
+                                <li>Bootstrap-vue</li>
+                                <li>Buefy</li>
+                                <li>Vuetify</li>
+                                <li>CoreUI</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-normal">Database Design</h5>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">
+                                <img src="./img/mysql.svg" class="mr-3 mb-3" width="50" alt="mysql">
+                                <img src="./img/sqlserver.png" class="mr-3 mb-3" width="50" alt="sqlserver">
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>MySQL</li>
+                                <li>MS SQL Server</li>
+                                <li>Stored Procedure</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- CONTACT -->
+        <div id="contact" class="pt-4">
+            <h2 class="text-center font-weight-light">CONTACT</h2>
+            <p class="container text-center lead">
+                Please don't hesitate to contact me.
+            </p>
+
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-4 mb-4">
+                        <img src="./img/001-email.svg" class="mr-3 mb-3" width="100" alt="Email">
+                        <div class="media-body align-middle">
+                            <h5 class="mt-0 mb-1">E-Mail</h5>
+                            pablophilipandrew@gmail.com
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="./img/002-agenda.svg" class="mr-3 mb-3" width="100" alt="Phone">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Phone</h5>
+                            +63-915-533-8260
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="./img/003-pointers.svg" class="mr-3 mb-3" width="100" alt="Address">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Address</h5>
+                            Makati City, Philippines
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <div>
-            <a href="#home">Home</a>
-        </div>
-        <div>
-            <a href="#projects">Projects</a>
-        </div>
-        <div>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
+    </main>
 
+    <!-- FOOTER -->
+    <footer class="bg-light text-muted pt-4 pb-2">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>My Portfolio Website &copy; 2020</p>
+        </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
